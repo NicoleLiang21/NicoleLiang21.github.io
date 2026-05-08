@@ -12,9 +12,35 @@
     object-fit: cover;
 }
 
-.contact-links a {
-    margin-right: 12px;
-    color: #60a5fa;
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 12px;
+    background: #1e293b;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: white;
+
+    transition: background 0.2s ease;
+}
+
+.contact-item:hover {
+    background: #334155;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
 }
 
 body {
