@@ -9,11 +9,22 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
     const rightBtn = wrapper.querySelector('.carousel-btn.right');
     const carousel = wrapper.querySelector('.media-carousel');
 
-    const scrollAmount = 300;
+    const items = Array.from(wrapper.querySelectorAll('.media-item'));
+    let index = 0;
 
     function clamp(v) {
         return Math.min(1, Math.max(0, v));
     }
+
+    function scrollToIndex(i) {
+    index = Math.max(0, Math.min(i, items.length - 1));
+
+    items[index].scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+    });
+}
 
     // Hover to reveal
     wrapper.addEventListener('mousemove', (e) => {
@@ -50,11 +61,11 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
     // Click to scroll
     leftBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        scrollToIndex(index - 1);
     });
 
     rightBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        scrollToIndex(index + 1);
     });
 });
