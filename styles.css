@@ -5,10 +5,16 @@
     margin-bottom: 40px;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .headshot {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    margin-bottom: 5px; 
     object-fit: cover;
 }
 
