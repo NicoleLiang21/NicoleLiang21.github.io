@@ -75,6 +75,20 @@ h2 {
     color: var(--color4);
 }
 
+/* Email/Phone */
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color4);
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.divider {
+    color: var(--color4);
+}
+
 /* Contact links */
 .contact-links {
     display: flex;
