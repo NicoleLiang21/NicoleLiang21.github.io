@@ -133,10 +133,26 @@ h2 {
     cursor: pointer;
     border-radius: 6px;
     z-index: 10;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
 }
 
-.carousel-btn.left { left: 5px; }
-.carousel-btn.right { right: 5px; }
+.carousel-wrapper:hover .carousel-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-btn.left {
+    left: 5px;
+    transform: translateY(-50%) translateX(-6px);
+}
+
+.carousel-btn.right {
+    right: 5px;
+    transform: translateY(-50%) translateX(6px);
+}
 
 /* Links */
 a {
