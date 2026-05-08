@@ -121,11 +121,12 @@ h2 {
     display: block;
 }
 
-.carousel-btn {     /* buttons */
+/* buttons */
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(30, 41, 59, 0.9);
     border: none;
     color: white;
     font-size: 24px;
@@ -139,20 +140,13 @@ h2 {
     transition: opacity 0.2s ease;
 }
 
-.carousel-wrapper:hover .carousel-btn {
-    opacity: 1;
-    pointer-events: auto;
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
 }
 
-.carousel-btn.left {
-    left: 5px;
-    transform: translateY(-50%) translateX(-6px);
-}
-
-.carousel-btn.right {
-    right: 5px;
-    transform: translateY(-50%) translateX(6px);
-}
+.carousel-btn.left { left: 8px; }
+.carousel-btn.right { right: 8px; }
 
 /* Links */
 a {
