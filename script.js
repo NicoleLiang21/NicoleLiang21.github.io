@@ -24,7 +24,7 @@ document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
         const RIGHT_ZONE = 120;
 
         // base visibility (always show both when inside wrapper)
-        const base = 0.25;
+        const base = 0.5;
 
         // edge emphasis (independent)
         const leftBoost = Math.max(0, 1 - x / LEFT_ZONE);
