@@ -20,22 +20,24 @@
 }
 
 .contact-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
 
-    padding: 8px 12px;
+    padding: 10px 14px;
     background: #1e293b;
-    border-radius: 8px;
+    border-radius: 10px;
 
     text-decoration: none;
     color: white;
 
-    transition: background 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .contact-item:hover {
     background: #334155;
+    transform: translateY(-1px);
 }
 
 .icon {
@@ -96,11 +98,11 @@ h2 {
 }
 
 /* links */
-link{
+a {
     color: #60a5fa;
     text-decoration: none;
 }
 
-link:hover {
+a:hover {
     text-decoration: underline;
 }
