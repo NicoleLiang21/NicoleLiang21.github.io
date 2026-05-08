@@ -1,3 +1,21 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.headshot {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-links a {
+    margin-right: 12px;
+    color: #60a5fa;
+}
 
 body {
     font-family: Arial, sans-serif;
